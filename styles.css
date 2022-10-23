@@ -22,7 +22,8 @@ html{
 
 
 body {
-	border: 5px solid black;
+	/*border: 5px solid black;*/
+	margin: 0;
 	display: flex;
 	position: static;
 	font-family: sans-serif;
@@ -71,6 +72,7 @@ nav header {
 	padding-top: 25px;
 	padding-left: 0;
 	font-weight: bold;
+	text-indent: 16px;
 }
 
 nav a {
@@ -81,6 +83,7 @@ nav a {
 	/*vertical-align: middle;*/
 	color: black;
 	text-decoration: none;
+	text-indent: 16px;
 	color: inherit;
 
 
@@ -92,7 +95,8 @@ nav a {
 /*Style the main content*/
 
 main {
-	border: 5px solid black;
+	/*border: 5px solid black;*/
+	border-left: 4px solid #323030;
 	padding-top: 1rem;
 	padding-bottom: 2rem;
 	padding-left: 2rem;
