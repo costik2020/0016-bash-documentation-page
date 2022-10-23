@@ -1,11 +1,11 @@
 :root {
-	--background-color1: #303030;
-	--text-color1: #f5e7f3;
-	--text-link-color: yellow;
+	--background-color1: #4b4a54;
+	--text-color1: #dcd9e3;
+	--text-link-color: #ECA72C;
 
-	--code-block-background-color: #a3cfcd;
-	--code-inline-background-color: #ffe3f1;
-	--code-text-color: red;
+	--code-block-background-color: #000000;
+	--code-inline-background-color: #2a272a;
+	--code-text-color: #ffffff;
 }
 
 
@@ -15,6 +15,9 @@
 
 html{
 	font-size: 16px;
+
+	/*An auto scroll animation effect when I click the navbar links*/
+	scroll-behavior: smooth;
 }
 
 
@@ -93,7 +96,7 @@ main {
 	padding-top: 1rem;
 	padding-bottom: 2rem;
 	padding-left: 2rem;
-	padding-right: 1rem;
+	padding-right: 2rem;
 }
 
 main header {
@@ -114,8 +117,10 @@ main section ul {
 
 
 
-/*Style code blocks*/
-section p code, section ul code {
+/*Style code*/
+
+/*Inline code*/
+section p code, section ul code, blockquote code {
 	display: inline;
 	/*border: 5px solid green;*/
 	border: revert;
@@ -123,20 +128,41 @@ section p code, section ul code {
 	color: var(--code-text-color);
 	margin: revert;
 	padding: revert;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: revert;
 
 }
 
 
+
+/*Block code*/
 code {
 	font-family: monospace;
 	display: block;
 	/*border: 5px solid black;*/
 	background-color: var(--code-block-background-color);
 	color: var(--code-text-color);
-	margin-right: 10rem;
+	/*margin-right: 10rem;*/
 	padding: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	border-radius: 5px;
 }
 
 main a {
 	color: var(--text-link-color);
+}
+
+
+
+
+main .bash-logo {
+	width: 400px;
+	float: left;
+	margin: 1rem;
+}
+
+main .clear-my-float {
+	clear: both;
 }
