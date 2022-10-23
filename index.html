@@ -7,32 +7,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
-		<nav id="navbar">
-			<header>BASH Documentation</header>
 
-				<a href="#Introduction_to_BASH" class="nav-link">Introduction to BASH</a>
-				<a href="#Linux_and_BASH" class="nav-link">Linux and BASH</a>
-				<a href="#Hello_World_in_BASH" class="nav-link">Hello World in BASH</a>
-				<a href="#Variables" class="nav-link">Variables</a>
-				<a href="#Constants" class="nav-link">Constants</a>
-				<a href="#Global_variables_vs_Local_variables_in_BASH" class="nav-link">Global variables vs Local variables in BASH</a>
-				<a href="#Using_a_file_as_a_place_to_store_values_from_loop_processes" class="nav-link">Using a file as a place to store values from loop processes</a>
-				<a href="#Data_Types" class="nav-link">Data Types</a>
-				<a href="#Concatenate_strings_in_bash" class="nav-link">Concatenate strings in bash</a>
-				<a href="#Length_of_a_string_in_BASH" class="nav-link">Length of a string in BASH</a>
-				<a href="#If_statement_if_condition" class="nav-link">If statement if condition</a>
-				<a href="#Loops_in_BASH" class="nav-link">Loops in BASH</a>
-				<a href="#for_loop_in_BASH" class="nav-link">for loop in BASH</a>
-				<a href="#Functions_in_BASH" class="nav-link">Functions in BASH</a>
-				<a href="#Pass_arguments_to_a_function_in_bash" class="nav-link">Pass arguments to a function in bash</a>
-				<a href="#Return_value_in_a_Bash_function" class="nav-link">Return value in a Bash function</a>
-				<a href="#Using_the_find_Command" class="nav-link">Using the find Command</a>
-				<a href="#Getting_relative_links_between_two_paths" class="nav-link">Getting relative links between two paths</a>
-				<a href="#References" class="nav-link">References</a>
+		<div class="navbar-wrap">
+			<nav id="navbar">
+				<header>BASH Documentation</header>
+
+				<div class="scroll-content">
+					<a href="#Introduction_to_BASH" class="nav-link">Introduction to BASH</a>
+					<a href="#Linux_and_BASH" class="nav-link">Linux and BASH</a>
+					<a href="#Hello_World_in_BASH" class="nav-link">Hello World in BASH</a>
+					<a href="#Variables" class="nav-link">Variables</a>
+					<a href="#Constants" class="nav-link">Constants</a>
+					<a href="#Global_variables_vs_Local_variables_in_BASH" class="nav-link">Global variables vs Local variables in BASH</a>
+					<a href="#Using_a_file_to_store_values_from_a_loop" class="nav-link">Using a file to store values from a loop</a>
+					<a href="#Data_Types" class="nav-link">Data Types</a>
+					<a href="#Concatenate_strings_in_bash" class="nav-link">Concatenate strings in bash</a>
+					<a href="#Length_of_a_string_in_BASH" class="nav-link">Length of a string in BASH</a>
+					<a href="#If_statement_if_condition" class="nav-link">If statement if condition</a>
+					<a href="#Loops_in_BASH" class="nav-link">Loops in BASH</a>
+					<a href="#for_loop_in_BASH" class="nav-link">for loop in BASH</a>
+					<a href="#Functions_in_BASH" class="nav-link">Functions in BASH</a>
+					<a href="#Pass_arguments_to_a_function_in_bash" class="nav-link">Pass arguments to a function in bash</a>
+					<a href="#Return_value_in_a_Bash_function" class="nav-link">Return value in a Bash function</a>
+					<a href="#Using_the_find_Command" class="nav-link">Using the find Command</a>
+					<a href="#Getting_relative_links_between_two_paths" class="nav-link">Getting relative links between two paths</a>
+					<a href="#References" class="nav-link">References</a>
 
 
+				</div>
 
-		</nav>
+
+			</nav>
+
+		</div>
 
 
 		<main id="main-doc">
@@ -211,8 +218,8 @@
 
 
 
-			<section class="main-section" id="Using_a_file_as_a_place_to_store_values_from_loop_processes">
-				<header>Using a file as a place to store values from loop processes</header>
+			<section class="main-section" id="Using_a_file_to_store_values_from_a_loop">
+				<header>Using a file to store values from a loop</header>
 				<p>So if you have a variable a counter a iterator in bash loop that is incremented at each iteration. But you can't print it or echo it after the loop. </p>
 				<p>This problem is due to  Parent Shell and Children Subshells so the best approach would be to write the data of <strong> the variable to a file</strong> and then read it from a file...</p>
 				<p>This is the code snipet that it may help me to overcome this problem:</p>
@@ -687,7 +694,7 @@ Now If I want to get it's relative path from one directory to another directory 
 			</blockquote>
 			<p>Note that both paths need to exist for the command to be successful. If you need the relative path anyway even if one of them does not exist then add the <code>-m</code> switch.</p>
 			<p>For more examples, see <a href="https://stackoverflow.com/q/2564634/55075">Convert absolute path into relative path given a current directory</a></p>
-			<li></li>
+			
 		</section>
 
 

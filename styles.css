@@ -9,22 +9,69 @@ html{
 
 
 body {
-	border: 10px solid black;
+	border: 5px solid black;
 	display: flex;
+	position: static;
+}
+
+.navbar-wrap {
+
+}
+
+
+nav .scroll-content {
+	/*border: 1px solid red;*/
+	height: 100vh;
+	/*Adding scroll bar to my navigation element*/
+	/*
+	overflow: hidden;
+	overflow: scroll;
+	*/
+	overflow: auto;
+	color: red;
 }
 
 nav {
-	border: 10px solid black;
-	width: 50rem;
+	/*border: 5px solid green;*/
+	min-width: 400px;
+	flex-shrink: 0;
 
+	position: sticky;
+	top: 0;
+	left: 0;
+
+
+
+}
+
+
+
+nav header {
+	/*border: 1px solid red;*/
+	border-bottom: 1px solid black;
+	height: 80px;
+	font-size: 1.2rem;
+	padding-top: 25px;
+	padding-left: 0;
+	font-weight: bold;
 }
 
 nav a {
 	display: block;
+	border-bottom: 1px solid black;
+	height: 40px;
+	padding-top: 10px;
+	/*vertical-align: middle;*/
+	color: black;
+	text-decoration: none;
+
+
 }
 
 main {
-	border: 10px solid black;
+	border: 5px solid black;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
 }
 
 main header {
